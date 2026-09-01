@@ -59,3 +59,22 @@ The repository will be organized into seven modules corresponding to the main de
 05-scara-trajectory-planning/
 06-potential-field-path-planning/
 07-scara-actuation-control/
+```
+Each module will contain the relevant source code, simulation models, figures, and a short technical README where applicable.
+
+
+## Course Information
+
+Course: Robotics
+
+Department: Mechanical Engineering
+
+University: Sharif University of Technology
+
+Instructor: Dr. Saeed Behzadipour
+
+## Notes
+
+All results in this repository are based on analytical calculations and simulation. No physical robot was fabricated or experimentally tested as part of these assignments.
+
+Original course reports may be included for documentation, while course-provided problem statements and copyrighted instructional material are not redistributed.
