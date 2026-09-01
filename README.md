@@ -1,37 +1,36 @@
 # Robotic Manipulator Modeling, Motion Planning, and Control
 
-Integrated robotics coursework covering manipulator kinematics, differential motion, trajectory and path planning, multibody simulation, actuation, and closed-loop control.
+An integrated undergraduate robotics project covering manipulator kinematics, differential motion, trajectory and path planning, multibody simulation, actuation, and closed-loop control.
 
 ## Overview
 
-This repository consolidates seven sequential assignments completed for the undergraduate Robotics course at Sharif University of Technology.
+This repository consolidates a sequence of robotics assignments completed at Sharif University of Technology into a single engineering project.
 
-The work covers the modeling and simulation of SCARA and 3-DOF PUMA manipulators, including coordinate transformations, forward and inverse kinematics, Jacobian-based differential kinematics, trajectory generation, path planning, actuator modeling, and PID joint control.
+Rather than presenting the original coursework as separate homework submissions, the repository reorganizes the work into technical modules that follow the development of robotic-manipulator analysis and control:
 
-The repository is presented as an **integrated coursework project**, not as an independent research project. Several assignments build directly on models and methods developed in earlier stages, particularly the SCARA modeling, trajectory-planning, and control tasks.
+**mathematical foundations → manipulator kinematics → differential kinematics → motion planning → path planning → actuation and closed-loop control**
 
-## Project Development Stages
+The project includes work on SCARA and 3-DOF PUMA manipulators using MATLAB, Simulink, Simscape Multibody, and SolidWorks.
 
-1. **Coordinate Transformations**  
-   Homogeneous rotation and translation transformations implemented in MATLAB.
+## Project Architecture
 
-2. **SCARA Modeling and Forward Kinematics**  
-   CAD modeling, Simulink/Simscape simulation, Denavit–Hartenberg formulation, and forward-kinematics validation.
+### 1. Foundations
+Homogeneous transformations and coordinate-frame operations used throughout the later kinematic models.
 
-3. **PUMA Inverse Kinematics**  
-   Modeling of a 3-DOF RRR manipulator and implementation of a geometric inverse-kinematics solution.
+### 2. Manipulator Kinematics
+Forward kinematics of a SCARA robot and geometric inverse kinematics of a 3-DOF RRR PUMA manipulator.
 
-4. **Jacobian and Differential Kinematics**  
-   Symbolic construction of translational and rotational Jacobians and joint-velocity analysis.
+### 3. Differential Kinematics
+Symbolic translational and rotational Jacobian construction and joint-velocity mapping.
 
-5. **SCARA Trajectory Planning**  
-   Joint-space polynomial trajectories and Cartesian straight-line motion using an LSPB/trapezoidal velocity profile.
+### 4. Motion Planning
+Joint-space polynomial trajectories and Cartesian straight-line motion using an LSPB/trapezoidal velocity profile.
 
-6. **Potential-Field Path Planning**  
-   Artificial potential-field path planning for a point robot with line-segment obstacles, including analysis of a local-minimum failure case.
+### 5. Path Planning
+Artificial potential-field path planning with line-segment obstacles and analysis of a local-minimum failure case.
 
-7. **Actuation and Closed-Loop Control**  
-   SCARA multibody simulation with link masses, DC-motor/gear actuation, PID joint control, and execution of a planned trajectory.
+### 6. Actuation and Control
+SCARA multibody modeling with link masses, DC-motor/gear actuation, PID joint control, and closed-loop execution of a planned trajectory.
 
 ## Selected Results
 
@@ -49,32 +48,28 @@ The repository is presented as an **integrated coursework project**, not as an i
 
 ## Repository Structure
 
-The repository will be organized into seven modules corresponding to the main development stages:
-
 ```text
-01-coordinate-transformations/
-02-scara-forward-kinematics/
-03-puma-inverse-kinematics/
-04-jacobian-differential-kinematics/
-05-scara-trajectory-planning/
-06-potential-field-path-planning/
-07-scara-actuation-control/
+01-foundations/
+02-manipulator-kinematics/
+03-differential-kinematics/
+04-motion-planning/
+05-path-planning/
+06-actuation-and-control/
+assets/
+docs/
 ```
-Each module will contain the relevant source code, simulation models, figures, and a short technical README where applicable.
 
+The numbered directories contain the technical project modules. Reusable figures and visual results will be placed under `assets/`, while original coursework reports may be retained under `docs/course-reports/` as archival documentation.
 
 ## Course Information
 
-Course: Robotics
-
-Department: Mechanical Engineering
-
-University: Sharif University of Technology
-
-Instructor: Dr. Saeed Behzadipour
+**Course:** Robotics  
+**Department:** Mechanical Engineering  
+**University:** Sharif University of Technology  
+**Instructor:** Dr. Saeed Behzadipour
 
 ## Notes
 
-All results in this repository are based on analytical calculations and simulation. No physical robot was fabricated or experimentally tested as part of these assignments.
+All results in this repository are based on analytical calculations and simulation. No physical robot was fabricated or experimentally tested as part of this coursework.
 
-Original course reports may be included for documentation, while course-provided problem statements and copyrighted instructional material are not redistributed.
+The repository is an engineering-oriented reorganization of the original coursework. Course-provided problem statements and copyrighted instructional material are not redistributed.
