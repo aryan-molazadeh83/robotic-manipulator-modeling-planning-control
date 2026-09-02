@@ -14,7 +14,7 @@ The module demonstrates:
 ## Source Files
 
 ```text
-code/
+codes/
 ├── coordinate_transform_demo.m
 ├── rot_function.m
 └── trans_function.m
